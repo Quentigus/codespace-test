@@ -1,7 +1,7 @@
 {
   "name": "Test codespace",
   "forwardPorts": [4200],
-  "postCreateCommand": "bash .devcontainer/setup.sh",
+  //"postCreateCommand": "bash .devcontainer/setup.sh",
   "customizations": {
     "vscode": {
       "extensions": [
