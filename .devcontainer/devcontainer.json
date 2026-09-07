@@ -5,7 +5,12 @@
       "extensions": [
         "esbenp.prettier-vscode",
         "ritwickdey.LiveServer"
-      ]
+      ], 
+      "settings": {
+        "liveServer.settings.root": "/src/index.html",
+        "liveServer.settings.ChromeDebuggingAttachment": true, 
+        "liveServer.settings.port": 4200
+      }
     }
   }
 }
