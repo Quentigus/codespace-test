@@ -1,21 +1,11 @@
 {
-  "name": "TP Frontend ENSIM",
-  // "image": "mcr.microsoft.com/devcontainers/javascript-node:26",
-
-  // Commande exécutée automatiquement à la création du Codespace
-  // "postCreateCommand": "npm install",
-
-  // Extensions VS Code préinstallées pour l'étudiant
-  // "customizations": {
-  //   "vscode": {
-  //    "extensions": [
-  //      "esbenp.prettier-vscode",
-  //      "dbaeumer.vscode-eslint",
-  //      "ritwickdey.LiveServer"
-  //    ]
-  //  }
-  // },
-
-  // Rendre le port du serveur dev public/accessible facilement
-  // "forwardPorts": [5173, 4200]
+  "name": "Test codespace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  }
 }
