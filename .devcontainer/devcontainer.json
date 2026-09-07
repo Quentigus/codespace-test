@@ -1,5 +1,6 @@
 {
   "name": "Test codespace",
+  "forwardPorts": [4200],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -7,7 +8,7 @@
         "ritwickdey.LiveServer"
       ], 
       "settings": {
-        "liveServer.settings.root": "/src/index.html",
+        "liveServer.settings.root": "/src",
         "liveServer.settings.ChromeDebuggingAttachment": true, 
         "liveServer.settings.port": 4200, 
         "editor.defaultFormatter": "esbenp.prettier-vscode",
