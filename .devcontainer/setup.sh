@@ -12,7 +12,4 @@ if [ ! -f "package.json" ]; then
   # npm install bootstrap
 
   echo "✅ Application React prête ! Tape 'npm run dev' pour lancer le serveur."
-else
-  echo "📦 Installation des dépendances existantes..."
-  npm install
 fi
