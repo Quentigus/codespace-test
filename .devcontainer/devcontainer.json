@@ -1,21 +1,37 @@
 {
-  "name": "Test codespace",
-  "forwardPorts": [4200],
-  "postCreateCommand": "bash .devcontainer/setup.sh",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "esbenp.prettier-vscode",
-        "ritwickdey.LiveServer"
-      ], 
-      "settings": {
-        "liveServer.settings.root": "/src",
-        "liveServer.settings.ChromeDebuggingAttachment": true, 
-        "liveServer.settings.port": 4200, 
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file"   
-      }
-    }
-  }
+    "name": "Test codespace",
+
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+    "waitFor": "postCreateCommand",
+    // "onCreateCommand": "npm create vite@latest . --yes --- --template=react --overwrite=ignore --eslint=true --no-immediate",
+
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+              "src/App.jsx"
+            ]
+        },
+        "vscode": {
+            "extensions": [
+                // "ritwickdey.LiveServer",
+                "esbenp.prettier-vscode",
+                "PKief.material-icon-theme"
+            ],
+            "settings": {
+                // "liveServer.settings.root": "/src",
+                // "liveServer.settings.ChromeDebuggingAttachment": true,
+                // "liveServer.settings.port": 4200,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true,
+                "editor.formatOnSaveMode": "file"
+            }
+        }
+    },
+    "portsAttributes": {
+        "3000": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [3000]
 }
