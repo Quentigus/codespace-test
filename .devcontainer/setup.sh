@@ -8,7 +8,7 @@ if [ ! -f "package.json" ]; then
 
   # Crée l'application React dans le dossier courant (.)
   npm create vite@latest $temporary_folder --yes --- --template=react --eslint=true --no-immediate
-  cp -rn $temporary_folder .
+  cp -r --update=none $temporary_folder/* .
   rm -rf $temporary_folder
 
   # Installe les dépendances (dont Bootstrap par exemple)
