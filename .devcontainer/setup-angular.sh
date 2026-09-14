@@ -19,8 +19,8 @@ if [ ! -f "package.json" ]; then
   rm -rf $angular_app_name
 
   # Installe les dépendances (dont Bootstrap par exemple)
+  echo "🚀 Installation des dépendances..."
   npm install
-  # npm install bootstrap
 
   echo "✅ Application Angular prête ! Tape 'npm run dev' pour lancer le serveur."
 fi
