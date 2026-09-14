@@ -1,6 +1,7 @@
 #!/bin/bash
 
 temporary_folder=tmp
+CI=true
 
 # Vérifie si le projet Angular est déjà créé (évite de réécrire par-dessus s'il existe déjà)
 if [ ! -f "package.json" ]; then
