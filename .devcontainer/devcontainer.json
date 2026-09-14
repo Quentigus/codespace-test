@@ -1,14 +1,15 @@
 {
     "name": "Test codespace",
 
-    "postCreateCommand": "bash .devcontainer/setup.sh",
+    // "postCreateCommand": "bash .devcontainer/setup-react.sh",
+    "postCreateCommand": "bash .devcontainer/setup-angular.sh",
     "waitFor": "postCreateCommand",
-    // "onCreateCommand": "npm create vite@latest . --yes --- --template=react --overwrite=ignore --eslint=true --no-immediate",
 
     "customizations": {
         "codespaces": {
             "openFiles": [
-              "src/App.jsx"
+                // "src/App.jsx"
+                "src/app/app.component.html"
             ]
         },
         "vscode": {
@@ -18,6 +19,7 @@
                 "PKief.material-icon-theme"
             ],
             "settings": {
+                "workbench.iconTheme": "material-icon-theme",
                 // "liveServer.settings.root": "/src",
                 // "liveServer.settings.ChromeDebuggingAttachment": true,
                 // "liveServer.settings.port": 4200,
