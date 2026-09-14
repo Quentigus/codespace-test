@@ -1,6 +1,7 @@
 #!/bin/bash
 
 temporary_folder=tmp
+angular_app_name=angular-app
 
 export NG_FORCE_TTY=false
 export CI=true
@@ -13,12 +14,12 @@ if [ ! -f "package.json" ]; then
   npm i -g @angular/cli
   
   echo "🚀 Initialisation de l'application Angular (Vite)..."
-  ng new angular-app --skip-install --skip-tests --directory=.
-  # cp -r --update=none $temporary_folder/* .
-  # rm -rf $temporary_folder
+  ng new $angular_app_name --skip-install --skip-tests
+  cp -r --update=none $angular_app_name/* .
+  rm -rf $angular_app_name
 
   # Installe les dépendances (dont Bootstrap par exemple)
-  # npm install
+  npm install
   # npm install bootstrap
 
   echo "✅ Application Angular prête ! Tape 'npm run dev' pour lancer le serveur."
