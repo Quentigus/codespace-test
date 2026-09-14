@@ -5,11 +5,13 @@ CI=true
 
 # Vérifie si le projet Angular est déjà créé (évite de réécrire par-dessus s'il existe déjà)
 if [ ! -f "package.json" ]; then
-  echo "🚀 Initialisation de l'application Angular (Vite)..."
 
   # Crée l'application Angular dans le dossier courant (.)
+  echo "🚀 Installation de Angular CLI..."
   npm i -g @angular/cli
-  ng new --skip-install --skip-tests
+  
+  echo "🚀 Initialisation de l'application Angular (Vite)..."
+  ng new angular-app --skip-install --skip-tests
   # cp -r --update=none $temporary_folder/* .
   # rm -rf $temporary_folder
 
