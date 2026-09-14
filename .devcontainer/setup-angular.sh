@@ -13,7 +13,7 @@ if [ ! -f "package.json" ]; then
   npm i -g @angular/cli
   
   echo "🚀 Initialisation de l'application Angular (Vite)..."
-  ng new angular-app --skip-install --skip-tests
+  ng new angular-app --skip-install --skip-tests --directory=.
   # cp -r --update=none $temporary_folder/* .
   # rm -rf $temporary_folder
 
